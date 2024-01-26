@@ -25,7 +25,7 @@ def generate_response(prompt, role="user"):
             {"role": "user", "content": prompt}
         ]
     )
-    return response.choices[0].message
+    return response.choices[0].message.content
 
 
 @app.route("/callback", methods=['POST'])
