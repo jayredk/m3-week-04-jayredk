@@ -16,7 +16,7 @@ commands_info = """
 
 4. Dad Joke 指令：
    - 指令格式：/djoke
-   - 功能：要求生成一則 dad joke 並用中文解釋。
+   - 功能：要求生成一則簡短的 dad joke。
    - 範例：/djoke
 
 5. 幹話模式指令：

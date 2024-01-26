@@ -57,21 +57,21 @@ def handle_message(event):
             TextSendMessage(text=response)
         )
     elif msg.startswith('/joke'):
-        question = "你是一位說笑話的大師，擅長相聲、喜劇。用正體中文說一個笑話"
+        question = "你是一位說笑話的大師，擅長相聲、喜劇。用正體中文說一個 50 字內的笑話"
         response = generate_response(question)
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text=response)
         )
     elif msg.startswith('/djoke'):
-        question = "告訴我一個 Dad joke，並用正體中文解釋給我聽"
+        question = "告訴我一個簡短的 Dad joke"
         response = generate_response(question)
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text=response)
         )
     elif msg.startswith('/ts'):
-        question = "接下來請以幹話的方式回覆我，我說的任何東西，請以幽默有趣的口吻回覆"
+        question = "接下來請以幹話的方式回覆我，我說的任何東西，請以幽默、簡潔、有趣的口吻回覆"
         response = generate_response(question)
         line_bot_api.reply_message(
             event.reply_token,
