@@ -18,6 +18,10 @@ handler = WebhookHandler(os.getenv('YOUR_CHANNEL_SECRET'))
 def generate_response(prompt, role="user"):
     pass
 
+@app.route("/", methods=['GET'])
+def home():
+    return 'Hello homepage'
+
 @app.route("/callback", methods=['POST'])
 def callback():
     signature = request.headers['X-Line-Signature']
